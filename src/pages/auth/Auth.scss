@@ -9,10 +9,9 @@
     width: 977px;
     display: flex;
     justify-content: space-between;
-    
 
     .fb-auth-left {
-        margin: 20px;
+      margin: 20px;
       img {
         width: 320px;
         transform: translate(-27px, 10px);
@@ -90,37 +89,53 @@
         }
       }
     }
-    .fb-auth-dec{
-         font-size: 14px;
-         text-align: center;
-         margin: 25px 0px;
+    .fb-auth-dec {
+      font-size: 14px;
+      text-align: center;
+      margin: 25px 0px;
 
-         a{
-            font-weight: 600;
-            color: #000;
+      a {
+        font-weight: 600;
+        color: #000;
 
-            &:hover{
-                text-decoration: underline;
-            }
-         }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
 
-.sing-up-form{
+.sing-up-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 
-  .h-form{
-    display: flex;
-    gap: 10px;
-    
-
-    
+  p {
+    font-size: 11px;
+    color: #777;
   }
 
-  input{
+  .h-form {
+    display: flex;
+    gap: 10px;
+
+   
+  }
+
+  button {
+    cursor: pointer;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--fb-secondary-color);
+    color: #fff;
+    width: 200px;
+    font-size: 17px;
+    margin: auto;
+  }
+
+  input {
     width: 100%;
     padding: 9px 11px;
     font-size: 15px;
@@ -128,5 +143,56 @@
     border: 1px solid #ccd0d5;
     border-radius: 5px;
   }
-  
+
+  .red-border {
+    border-color: red;
+  }
+
+  .reg-extra {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .reg-extra-tittle {
+      font-size: 11px;
+
+      svg {
+        cursor: pointer;
+      }
+    }
+
+    .reg-extra-opt {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      select {
+        flex: 1;
+        padding: 5px;
+        border: var(--fb-border);
+        border-radius: 5px;
+      }
+
+      label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        border: var(--fb-border);
+        border-radius: 5px;
+        flex: 1;
+        font-size: 14px;
+
+        span {
+          display: table;
+        }
+
+        input[type="radio"] {
+          display: table;
+          width: 20px;
+          padding: 0px;
+        }
+      }
+    }
+  }
 }
